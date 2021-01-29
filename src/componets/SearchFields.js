@@ -58,7 +58,7 @@ const SearchFieldsComponent = ({
 		})
 		.then(({data}) => {
 			if (!data.photos.length) {
-				showErrorMessage("Can't found any photos!");
+				showErrorMessage("Didn't find any photos!");
 			}
 			setPhotos(data.photos);
 		})

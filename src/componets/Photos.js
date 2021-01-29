@@ -15,12 +15,13 @@ const PhotosComponent = ({photos}) => {
 	const visiblePhotos = photos.slice(0, visible);
 	
 	return (
-		<div className="down-line-container">
+		<div className="down-container">
 			<div className="photos-container">
 				{visiblePhotos.map(({img_src}, index) => (
 					<img
+						alt="*"
 						key={index}
-						className="photo-container"
+						className="photo-item"
 						src={img_src}/>
 				))}
 			</div>

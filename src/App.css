@@ -17,6 +17,7 @@
 }
 
 .photos-container {
+    height: 100%;
     width: 100%;
     margin-top: 100px;
     display: flex;
@@ -25,23 +26,32 @@
     margin-bottom: 15px;
 }
 
-.photo-container {
+.photo-item {
     width: 30%;
     margin-top: 15px;
 }
 
-.down-line-container {
+.down-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
 }
 
+@media only screen and (max-width: 1200px) {
+    .search-fields-container {
+        width: 40%;
+    }
+    .photo-item {
+        width: 40%;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .search-fields-container {
         width: 60%;
     }
-    .photo-container {
+    .photo-item {
         width: 60%;
     }
 }
@@ -50,7 +60,7 @@
     .search-fields-container {
         width: 95%;
     }
-    .photo-container {
+    .photo-item {
         width: 95%;
     }
 }

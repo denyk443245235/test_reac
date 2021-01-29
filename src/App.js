@@ -8,9 +8,12 @@ import MuiAlert from '@material-ui/lab/Alert';
 import SearchFieldsComponent from "./componets/SearchFields";
 import './App.css';
 
-const Alert = (props) => {
-  return <MuiAlert elevation={6} variant="filled" {...props} />;
-};
+const Alert = (props) => (
+  <MuiAlert
+    elevation={6}
+    variant="filled"
+    {...props} />
+);
 
 const App = () => {
   const [photos, setPhotos] = useState([]);
