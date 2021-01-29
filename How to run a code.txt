@@ -1,0 +1,4 @@
+1. Open project folder in terminal.
+2. Run command 'npm i'.
+3. Run command 'npm start'
+4. Open in your browser url"http://localhost:3000/"
